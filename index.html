@@ -1,7 +1,11 @@
 <!DOCTYPE html>
 <html>
+
 <head>
+
 <title>Saraswathy Herbs</title>
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
 
 <style>
 
@@ -18,60 +22,54 @@ background:#1b5e20;
 color:white;
 display:flex;
 align-items:center;
+justify-content:space-between;
 padding:15px 40px;
 }
 
 header img{
-height:60px;
-margin-right:15px;
-}
-
-nav{
-margin-left:auto;
+height:50px;
 }
 
 nav a{
 color:white;
+margin-left:20px;
 text-decoration:none;
-margin:0 15px;
 font-weight:bold;
 }
 
 /* HERO */
 
 .hero{
-background:linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),
-url('https://images.unsplash.com/photo-1600411832986-5a4477b64a1c');
-background-size:cover;
-background-position:center;
-height:400px;
+background:#2e7d32;
+height:300px;
 display:flex;
+flex-direction:column;
 align-items:center;
 justify-content:center;
-text-align:center;
 color:white;
+text-align:center;
 }
 
 .hero h1{
-font-size:48px;
-margin-bottom:10px;
+font-size:40px;
+margin:0;
 }
 
 .hero p{
-font-size:20px;
+font-size:18px;
 }
 
 /* PRODUCTS */
 
 .products{
-padding:50px;
+padding:40px;
 text-align:center;
 }
 
 .product-grid{
 display:grid;
-grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
-gap:20px;
+grid-template-columns:repeat(auto-fit,minmax(200px,1fr));
+gap:25px;
 margin-top:30px;
 }
 
@@ -79,18 +77,21 @@ margin-top:30px;
 background:white;
 padding:20px;
 border-radius:10px;
-box-shadow:0 5px 10px rgba(0,0,0,0.1);
+box-shadow:0 3px 10px rgba(0,0,0,0.1);
 }
 
-.product h3{
-margin-top:10px;
+.product img{
+width:120px;
+height:120px;
+object-fit:cover;
+margin-bottom:10px;
 }
 
-.order-btn{
+.product button{
 background:#2e7d32;
 color:white;
-padding:10px 15px;
 border:none;
+padding:10px 15px;
 border-radius:5px;
 cursor:pointer;
 }
@@ -98,90 +99,126 @@ cursor:pointer;
 /* CONTACT */
 
 .contact{
-background:#e8f5e9;
+background:#e8efe8;
 padding:40px;
 text-align:center;
 }
 
-/* FOOTER */
+/* WHATSAPP FLOAT */
 
-footer{
-background:#1b5e20;
+.whatsapp{
+position:fixed;
+bottom:20px;
+right:20px;
+background:#25D366;
 color:white;
-text-align:center;
+font-size:26px;
 padding:15px;
+border-radius:50%;
+text-decoration:none;
 }
 
 </style>
-</head>
 
+</head>
 
 <body>
 
-
 <header>
+
+<div>
 
 <img src="logo.png">
 
-<h2>Saraswathy Herbs</h2>
+<span style="font-size:20px;font-weight:bold;margin-left:10px;">
+Saraswathy Herbs
+</span>
+
+</div>
 
 <nav>
+
 <a href="#">Home</a>
 <a href="#">Products</a>
 <a href="#">Contact</a>
+
 </nav>
 
 </header>
 
-
 <section class="hero">
-
-<div>
 
 <h1>Pure Natural Herbal Powders</h1>
 
 <p>Traditional Herbal Products • No Preservatives • Quality Tested</p>
 
-</div>
-
 </section>
-
 
 <section class="products">
 
-<h2>Our Herbal Products</h2>
+<h2>Featured Herbal Products</h2>
 
 <div class="product-grid">
 
 <div class="product">
-<h3>Amla Powder</h3>
-<button class="order-btn">Order on WhatsApp</button>
+<img src="henna.jpg">
+<h3>Henna Powder</h3>
+<a href="https://wa.me/919497092467?text=I want Henna Powder">
+<button>Order on WhatsApp</button>
+</a>
 </div>
 
 <div class="product">
+<img src="indigo.jpg">
+<h3>Indigo Powder</h3>
+<a href="https://wa.me/919497092467?text=I want Indigo Powder">
+<button>Order on WhatsApp</button>
+</a>
+</div>
+
+<div class="product">
+<img src="metabolic.jpg">
+<h3>Metabolic Wellness Powder</h3>
+<a href="https://wa.me/919497092467?text=I want Metabolic Wellness Powder">
+<button>Order on WhatsApp</button>
+</a>
+</div>
+
+<div class="product">
+<img src="ashwagandha.jpg">
 <h3>Ashwagandha Powder</h3>
-<button class="order-btn">Order on WhatsApp</button>
+<a href="https://wa.me/919497092467?text=I want Ashwagandha Powder">
+<button>Order on WhatsApp</button>
+</a>
 </div>
 
 <div class="product">
-<h3>Neem Leaves Powder</h3>
-<button class="order-btn">Order on WhatsApp</button>
+<img src="manjishta.jpg">
+<h3>Manjishta Powder</h3>
+<a href="https://wa.me/919497092467?text=I want Manjishta Powder">
+<button>Order on WhatsApp</button>
+</a>
 </div>
 
 <div class="product">
-<h3>Dry Ginger Powder</h3>
-<button class="order-btn">Order on WhatsApp</button>
+<img src="neem.jpg">
+<h3>Neem Powder</h3>
+<a href="https://wa.me/919497092467?text=I want Neem Powder">
+<button>Order on WhatsApp</button>
+</a>
 </div>
 
 <div class="product">
-<h3>Moringa Powder</h3>
-<button class="order-btn">Order on WhatsApp</button>
+<img src="neyrunjil.jpg">
+<h3>Neyrunjil Powder</h3>
+<a href="https://wa.me/919497092467?text=I want Neyrunjil Powder">
+<button>Order on WhatsApp</button>
+</a>
 </div>
 
 </div>
 
 </section>
-
 
 <section class="contact">
 
@@ -190,47 +227,20 @@ padding:15px;
 <p>
 Saraswathy Herbs<br>
 7/56 Thalakode P.O.<br>
-Chottanikkara, Ernakulam - 682314<br>
-Mobile: 9497092467<br>
+Chottanikkara, Ernakulam – 682314<br>
+Mobile: +91 9497092467<br>
 FSSAI: 11325999000446
 </p>
 
 </section>
 
-
-<footer>
-
-<p>© Saraswathy Herbs | Natural Herbal Products</p>
-
-</footer>
-
- <a href="https://wa.me/919497092467?text=Hello%20Saraswathy%20Herbs%20I%20want%20to%20know%20about%20your%20herbal%20products" 
-target="_blank" class="whatsapp-float">
+<a class="whatsapp"
+href="https://wa.me/919497092467?text=Hello Saraswathy Herbs">
 
 💬
 
 </a>
 
-<style>
-
-.whatsapp-float{
-position:fixed;
-bottom:20px;
-right:20px;
-background:#25D366;
-color:white;
-font-size:28px;
-padding:15px;
-border-radius:50%;
-text-decoration:none;
-box-shadow:0 4px 10px rgba(0,0,0,0.3);
-}
-
-.whatsapp-float:hover{
-background:#20b954;
-}
-
-</style> 
-
 </body>
+
 </html>
